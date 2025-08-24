@@ -1,0 +1,18 @@
+hostname R3
+!
+interface Serial0/0/0
+ ip address 20.0.0.2 255.255.255.0
+ no shutdown
+!
+interface Serial0/0/1
+ ip address 40.0.0.1 255.255.255.0
+ no shutdown
+!
+interface FastEthernet0/0
+ ip address 50.0.0.1 255.255.255.0
+ no shutdown
+!
+router ospf 2
+ network 20.0.0.0 0.0.0.255 area 1
+ network 40.0.0.0 0.0.0.255 area 1
+ network 50.0.0.0 0.0.0.255 area 1

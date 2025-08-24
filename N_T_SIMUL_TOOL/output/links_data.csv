@@ -1,0 +1,4 @@
+Device1,Device2,Subnet,Status,Bandwidth_Mbps
+R1,R3,20.0.0.0/24,green,100
+R1,R2,30.0.0.0/24,green,100
+R2,R3,40.0.0.0/24,green,100

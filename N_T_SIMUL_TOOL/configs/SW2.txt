@@ -1,0 +1,12 @@
+hostname SW2
+!
+vlan 3
+ name HR
+!
+interface range FastEthernet0/1-2
+ switchport mode access
+ switchport access vlan 3
+!
+interface GigabitEthernet0/1
+ switchport mode access
+ switchport access vlan 3

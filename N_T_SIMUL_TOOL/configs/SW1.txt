@@ -1,0 +1,12 @@
+hostname SW1
+!
+vlan 2
+ name IT
+!
+interface range FastEthernet0/1-2
+ switchport mode access
+ switchport access vlan 2
+!
+interface GigabitEthernet0/1
+ switchport mode access
+ switchport access vlan 2
